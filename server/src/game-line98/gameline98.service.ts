@@ -315,7 +315,7 @@ export class GameService {
     y: number,
     length: number
 ): boolean {
-    if (board[y][x] === 0) return false; // Đúng thứ tự board[y][x]
+    if (board[y][x] === 0) return false; 
 
     const directions = [
         [0, 1],   // Ngang (→)

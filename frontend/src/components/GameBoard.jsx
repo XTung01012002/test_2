@@ -117,16 +117,16 @@ const GameBoard = () => {
       <div className="game-board">
         {board.map((row, y) => (
           <div key={y} className="row">
-            {row.map((cell, x) => (
+            {row.map((cell_board, x) => (
               <div
                 key={x}
-                className={`cell ${selected?.x === x && selected?.y === y ? "selected" : ""}`}
+                className={`cell_board ${selected?.x === x && selected?.y === y ? "selected" : ""}`}
                 onClick={() => handleCellClick(x, y)}
               >
-                {cell !== 0 && (
+                {cell_board !== 0 && (
                   <div
                     className="ball-animation"
-                    style={{ backgroundColor: COLORS[cell] }}
+                    style={{ backgroundColor: COLORS[cell_board] }}
                   ></div>
                 )}
               </div>

@@ -1,4 +1,4 @@
-/* .game-container {
+.game-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@ button {
   gap: 5px;
 }
 
-.cell {
+.cell_board {
   width: 50px;
   height: 50px;
   background-color: white;
@@ -94,4 +94,4 @@ button {
 
 .ball-animation:hover {
   transform: scale(1.2);
-} */
+}
